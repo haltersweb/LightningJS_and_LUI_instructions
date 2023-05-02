@@ -6,12 +6,11 @@ These instructions are written in May 2023 for Mac OS.
 
 ## Table of Contents
 
-* [Prerequisites](Prerequisites)
-* [Installation](Installation)
-* [Initialize Your App with Lightning CLI's boilerplate](Initialize Your App with Lightning CLI's boilerplate)
+* [Prerequisites](#prerequisites)
+* [Lightning Installation](#installation)
+* [Initialize Your Lightning App](#initialize)
 
-
-## Prerequisites
+## <a name="prerequisites"></a>Prerequisites
 
 ### Knowledge required
 
@@ -27,7 +26,7 @@ It is a remote procedure call specification, allowing remote execution of a func
 * node
 * npm
 
-## Installation
+## <a name="installation"></a>Lightning Installation
 
 I will be using npm instead of yarn.
 
@@ -77,7 +76,7 @@ lng <command> [options]
 lng -V
 ```
 
-## Initialize Your App with Lightning CLI's boilerplate
+## <a name="initialize"></a>Initialize Your Lightning App
 
 CLI also contains a helpful boilerplate to begin your app from.
 
