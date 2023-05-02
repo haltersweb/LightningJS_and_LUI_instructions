@@ -4,12 +4,19 @@ Instructions to install and write LightningJS and Lightning UI apps.
 
 These instructions are written in May 2023 for Mac OS.
 
+## Table of Contents
+
+* [Prerequisites](Prerequisites)
+* [Installation](Installation)
+* [Initialize Your App with Lightning CLI's boilerplate](Initialize Your App with Lightning CLI's boilerplate)
+
+
 ## Prerequisites
 
 ### Knowledge required
 
 * JavaScript
-* JSON RPC (__r__emote __p__rocedure __c__all)
+* JSON RPC (Remote Procedure Call)
 
 #### What is JSON RPC
 
@@ -20,7 +27,9 @@ It is a remote procedure call specification, allowing remote execution of a func
 * node
 * npm
 
-## Installation with __npm__ (rather than yarn)
+## Installation
+
+I will be using npm instead of yarn.
 
 ### Install LightningJS and LightningUI (LUI)
 
