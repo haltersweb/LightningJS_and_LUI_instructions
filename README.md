@@ -1,6 +1,6 @@
-# LightningJS_and_LUI_instructions
+# LightningJS and LUI instructions
 
-Instructions to install and write LightningJS and Lightning UI apps.
+Instructions to install and write LightningJS and Lightning UI (LUI) apps.
 
 These instructions are written in May 2023 for Mac OS.
 
@@ -44,12 +44,16 @@ cd <name of project>
 ```bash
 npm init
 ```
-4. Create a local `.npmrc` file in the project folder containing the following content:
+
+<!-- THE FOLLOWING IS NOT NEEDED
+Create a local `.npmrc` file in the project folder containing the following content:
 ```bat
 @lightning:registry=https://artifactory.comcast.com/artifactory/api/npm/Lightning-npm-releases
 @suite-themes:registry=https://artifactory.comcast.com/artifactory/api/npm/xds-npm
 ```
-5. install lightning UI and lightning JS with:
+-->
+
+4. install lightning UI and lightning JS with:
 ```bash
 npm install -S @lightning/ui @lightningjs/core
 ```
