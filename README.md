@@ -9,6 +9,7 @@ These instructions are written in May 2023 for Mac OS.
 * [Prerequisites](#prerequisites)
 * [Lightning Installation](#installation)
 * [Initialize Your Lightning App](#initialize)
+* [Understanding Lightning](#understand)
 
 ## <a name="prerequisites"></a>Prerequisites
 
@@ -106,3 +107,37 @@ lng build
 ```bash
 lng serve
 ```
+
+## <a name="understand"></a>Understanding Lightning
+
+(from [Lightning Documentation](https://lightningjs.io/docs/#/what-is-lightning/index))
+
+### Overview
+
+Lightning is a JavaScript development platform for TV apps.  It uses WebGL rather than the DOM for rendering for high performance and smooth animation.  The only HTML element used is `<canvas>`.
+
+Lightning consists of three parts:
+
+__Lightning Core__ contains the Lightning Library and Render Engine which offers high performance and smooth animation. ([Lightning Core reference](https://lightningjs.io/docs/#/lightning-core-reference/index))
+
+__Lightning SDK__ contains __Lightning Core__ and helpful app development plugins. ([Lightning SDK reference](https://lightningjs.io/docs/#/lightning-sdk-reference/index))
+
+__Lightning CLI__ (command line interface) makes building apps easy with prefab components and app uploading tools.  Use Lightning CLI along with Lightning SDK. ([Lightning CLI Reference](https://lightningjs.io/docs/#/lightning-cli-reference/index))
+
+#### Componentization
+
+Lightning interfaces are built up from __components__ which can also be __collections of components__.  The app itself is a component which contains page components.  The page components each contain components, etc.
+
+### Interaction
+
+#### <a name="focus_management"></a>Focus management
+
+Since there is no DOM Tree to navigate through, __focus__ is handled by tracking an __active component__ via JavaScript.  A __focus path__ is defined as the __active component and its decendants__.
+
+#### Remote control interaction
+
+A remote control sends KeyCodes.  A KeyCode event listener is attached to the canvas element.  KeyCode events are then understood in relation to the active component (see [focus management](#focus_management) above).
+
+#### Routing between URLs
+
+Use the __Router__ plugin to create URL-driven apps.
