@@ -4,6 +4,22 @@ Instructions to install and write LightningJS and Lightning UI apps.
 
 These instructions are written in May 2023 for Mac OS.
 
+## Prerequisites
+
+### Knowledge required
+
+* JavaScript
+* JSON RPC (__r__emote __p__rocedure __c__all)
+
+#### What is JSON RPC
+
+It is a remote procedure call specification, allowing remote execution of a function and receiving the result, no matter that server's OS or that function's programming language.
+
+### Pre-installed
+
+* node
+* npm
+
 ## Installation with __npm__ (rather than yarn)
 
 ### Install LightningJS and LightningUI (LUI)
@@ -68,6 +84,7 @@ and follow the prompts.   Note the following prompts:
   * I like to create my app as a new directory (default) so that I can have multiple apps in one project folder.  If you would rather everything stays within your project directory, the necessary boilerplate modules will be added to the project's `node_modules` directory
   * I like to name my app directory with just the app name (rather than `com.domain.app.MyAppName`)
   * I'd rather not set up git in my app directory since I may already be using GitHub for my project folder.
+  * I'm not using TypeScript (the default).  I will be using JavaScript instead.
 
 2. Build your app with:
 ```bash
