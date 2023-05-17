@@ -31,7 +31,7 @@ It is a remote procedure call specification, allowing remote execution of a func
 
 I will be using npm instead of yarn.
 
-### Install LightningJS and LightningUI (LUI)
+### Prepare the project directory
 
 1. Create a new project directory:
 ```bash
@@ -46,6 +46,8 @@ cd <name of project>
 npm init
 ```
 
+### Install LightningJS
+
 <!-- THE FOLLOWING IS NOT NEEDED
 Create a local `.npmrc` file in the project folder containing the following content:
 ```bat
@@ -54,9 +56,24 @@ Create a local `.npmrc` file in the project folder containing the following cont
 ```
 -->
 
-4. install lightning UI and lightning JS with:
+Using the save flag (--save or -S), install LightningJS.
+
+(Save means the installed package is saved to package.json as a dependency. While the default is true in newer versions of npm, this is a good reminder.)
+
+Install LightningJS with:
 ```bash
-npm install -S @lightning/ui @lightningjs/core
+npm install -S @lightningjs/core
+```
+
+### Install LightningUI (LUI)
+
+Using the save flag (--save or -S), install LUI.
+
+(Save means the installed package is saved to package.json as a dependency. While the default is true in newer versions of npm, this is a good reminder.)
+
+Install LUI with:
+```bash
+npm install -S @lightning/ui
 ```
 
 ### Install Lightning CLI
@@ -91,13 +108,13 @@ CLI also contains a helpful boilerplate to begin your app from.
 ```bash
 lng create
 ```
-and follow the prompts.   Note the following prompts:
+and follow the prompts.   Notes on the prompts:
 
-  * name your app without spaces
-  * I like to create my app as a new directory (default) so that I can have multiple apps in one project folder.  If you would rather everything stays within your project directory, the necessary boilerplate modules will be added to the project's `node_modules` directory
-  * I like to name my app directory with just the app name (rather than `com.domain.app.MyAppName`)
-  * I'd rather not set up git in my app directory since I may already be using GitHub for my project folder.
+  * Name your app without spaces.
+  * I like to name my app's (relative) folder with just the app name such as `MyAppName` (rather than `com.domain.app.MyAppName`)
   * I'm not using TypeScript (the default).  I will be using JavaScript instead.
+  * I like to create my app as a new directory (default) so that I can have multiple apps in one project folder.  If you would rather everything stays within your project directory, the necessary boilerplate modules will be added to the project's `node_modules` directory
+  * I'd rather not set up an empty git repository for my app since I may already be using GitHub for my project folder.
 
 2. Build your app with:
 ```bash
