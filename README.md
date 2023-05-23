@@ -108,7 +108,9 @@ CLI also contains a helpful boilerplate to begin your app from.
 ```bash
 lng create
 ```
-and follow the prompts.   Notes on the prompts:
+and follow the prompts.
+
+### Notes on the `lng create` prompts:
 
   * Name your app without spaces.
   * I like to name my app's (relative) folder with just the app name such as `MyAppName` (rather than `com.domain.app.MyAppName`)
@@ -116,13 +118,24 @@ and follow the prompts.   Notes on the prompts:
   * I like to create my app as a new directory (default) so that I can have multiple apps in one project folder.  If you would rather everything stays within your project directory, the necessary boilerplate modules will be added to the project's `node_modules` directory
   * I'd rather not set up an empty git repository for my app since I may already be using GitHub for my project folder.
 
-2. Build your app with:
+2. Navigate to the created app folder:
+```bash
+cd MyAppName
+```
+
+3. Build a standalone app bundle to run on your browser with:
 ```bash
 lng build
 ```
-3. Run your app in your localhost with:
+
+4. Run your app in your localhost with:
 ```bash
 lng serve
+```
+
+5. Alternatively you can build the app, start the local webserver, __and watch for changes__ with:
+```bash
+lng dev
 ```
 
 ## <a name="understand"></a>Understanding Lightning
@@ -141,7 +154,7 @@ __Lightning SDK__ contains __Lightning Core__ and helpful app development plugin
 
 __Lightning CLI__ (command line interface) makes building apps easy with prefab components and app uploading tools.  Use Lightning CLI along with Lightning SDK. ([Lightning CLI Reference](https://lightningjs.io/docs/#/lightning-cli-reference/index))
 
-#### Componentization
+### Componentization
 
 Lightning interfaces are built up from __components__ which can also be __collections of components__.  The app itself is a component which contains page components.  The page components each contain components, etc.
 
@@ -158,3 +171,8 @@ A remote control sends KeyCodes.  A KeyCode event listener is attached to the ca
 #### Routing between URLs
 
 Use the __Router__ plugin to create URL-driven apps.
+
+## Learn Lightning
+
+### Build a TicTacToe app
+Follow the instructions from the [Lightning Get Started documentation](https://github.com/mlapps/lightning-getting-started-docs) on GitHub.
