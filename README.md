@@ -132,6 +132,9 @@ cd MyAppName
 ```bash
 lng build
 ```
+This creates a directory inside your app directory called `build`
+
+![image](https://github.com/haltersweb/LightningJS_and_LUI_instructions/assets/1916488/9c6a31b0-839e-4512-8516-305fe958f8d0)
 
 4. Run your app in your localhost with:
 ```bash
