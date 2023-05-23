@@ -116,7 +116,11 @@ and follow the prompts.
   * I like to name my app's (relative) folder with just the app name such as `MyAppName` (rather than `com.domain.app.MyAppName`)
   * I'm not using TypeScript (the default).  I will be using JavaScript instead.
   * I like to create my app as a new directory (default) so that I can have multiple apps in one project folder.  If you would rather everything stays within your project directory, the necessary boilerplate modules will be added to the project's `node_modules` directory
+  * Choose to install the NPM dependencies.
   * I'd rather not set up an empty git repository for my app since I may already be using GitHub for my project folder.
+
+Your `MyAppName` directory should now be created and contain the following:
+![image](https://github.com/haltersweb/LightningJS_and_LUI_instructions/assets/1916488/20a6fb46-52ef-438c-9e4c-04c9ca9cb301)
 
 2. Navigate to the created app folder:
 ```bash
