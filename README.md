@@ -168,6 +168,26 @@ __Lightning SDK__ contains __Lightning Core__ and helpful app development plugin
 
 __Lightning CLI__ (command line interface) makes building apps easy with prefab components and app uploading tools.  Use Lightning CLI along with Lightning SDK. ([Lightning CLI Reference](https://lightningjs.io/docs/#/lightning-cli-reference/index))
 
+### Modular approach
+
+SDK is modular, meaning you can import just the SDK modules you want to use.
+
+### Running the app
+
+the `src` folder contains the js files needed to launch the app.
+
+![image](https://github.com/haltersweb/LightningJS_and_LUI_instructions/assets/1916488/9e34d068-600a-4d8f-a589-c6cb5f433eea)
+
+Inside of the `src` folder is the `index.js`
+
+![image](https://github.com/haltersweb/LightningJS_and_LUI_instructions/assets/1916488/f2753e6c-8cc9-44e8-b8ef-d6610ff4b9b0)
+
+This launches our app by:
+
+1. Importing a bootstrap called `Launch` from the LightningJS SDK.
+2. Importing the App class from from App.js (also in the `src` directory).
+3. Export an invocation function that launches the app by passing the App class and arguments.
+
 ### Componentization
 
 Lightning interfaces are built up from __components__ which can also be __collections of components__.  The app itself is a component which contains page components.  The page components each contain components, etc.
