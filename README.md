@@ -120,6 +120,7 @@ and follow the prompts.
   * I'd rather not set up an empty git repository for my app since I may already be using GitHub for my project folder.
 
 Your `MyAppName` directory should now be created and contain the following:
+
 ![image](https://github.com/haltersweb/LightningJS_and_LUI_instructions/assets/1916488/20a6fb46-52ef-438c-9e4c-04c9ca9cb301)
 
 2. Navigate to the created app folder:
