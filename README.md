@@ -172,11 +172,22 @@ __Lightning CLI__ (command line interface) makes building apps easy with prefab 
 
 SDK is modular, meaning you can import just the SDK modules you want to use.
 
-### Running the app
+### Writing the app
 
 the `src` folder contains the js files needed to launch the app.
 
 ![image](https://github.com/haltersweb/LightningJS_and_LUI_instructions/assets/1916488/9e34d068-600a-4d8f-a589-c6cb5f433eea)
+
+Inside of the `src` folder is the `App.js`.  This JS file is where you will code your app.
+
+(`App.js` starts out with boilerplate code)
+
+The two parts are:
+
+1. import the necessary modules (usually the `Lightning` framework and `Utils`.
+2. declare / export our `App` class (a child of the `Lightning.Component` class)
+
+### Running the app
 
 Inside of the `src` folder is the `index.js`
 
