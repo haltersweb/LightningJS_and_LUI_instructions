@@ -146,6 +146,12 @@ lng serve
 lng dev
 ```
 
+### `settings.json` key value pairs
+
+![image](https://github.com/haltersweb/LightningJS_and_LUI_instructions/assets/1916488/7272084c-dfac-489e-ba65-58aee4a0805e)
+
+more info can be found on the [Lightning Get Started documentation](https://github.com/mlapps/lightning-getting-started-docs) on GitHub.
+
 ## <a name="understand"></a>Understanding Lightning
 
 (from [Lightning Documentation](https://lightningjs.io/docs/#/what-is-lightning/index))
